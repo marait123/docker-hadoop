@@ -1,9 +1,10 @@
 cd /
 cp /lab2/req.java /req
 export HADOOP_CLASSPATH=$(hadoop classpath)
+hadoop dfs -rm -r /req
 hadoop fs -mkdir /req 
 hadoop fs -mkdir /req/Input
-hadoop fs -put /req/Input/input.txt /req/Input
+hadoop fs -put /req/Input/in.csv /req/Input
 cd /req
 javac -classpath $HADOOP_CLASSPATH -d tutorial_classes req.java
 jar -cvf req.jar -C tutorial_classes .

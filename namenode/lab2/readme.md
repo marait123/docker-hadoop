@@ -27,4 +27,4 @@
 
 # note
 
-- the **in.csv** file present in lab2 isn't complete it is only subset of the original so make sure to place the original from the requirement when running the lab for the final time
+- the **in.csv** place it in this folder before running the requirements ( it is advised to run on a sample in.csv before running on the big 500MB in.csv file as this takes some time
